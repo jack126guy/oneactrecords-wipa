@@ -1,6 +1,6 @@
 <?php
 require_once('../db.php');
-function generate_list($releaseid = '') {
+function oar_wipa_generate_list($releaseid = '') {
 	global $sql;
 	if(empty($releaseid)) {
 		$wherecond = '';

@@ -31,7 +31,7 @@ if($sql->num_rows($releasequery) == 0) {
 				<tr><th>Name (Click to Download)</th><th>Description</th></tr>
 			</thead>
 			<tbody>
-			<?php include('wiplist.php'); generate_list($releaseid); ?>
+			<?php include('wiplist.php'); oar_wipa_generate_list($releaseid); ?>
 			</tbody>
 		</table>
 	</body>
