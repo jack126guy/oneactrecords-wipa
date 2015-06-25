@@ -24,7 +24,7 @@ if($sql->num_rows($releasequery) == 0) {
 		<link rel="stylesheet" type="text/css" href="tablestyles.css"/>
 	</head>
 	<body>
-		<p>WIPs for <a href="../?r=<?php echo $_GET['r'];?>">"<?php echo $releasename;?>"</a></p>
+		<p>WIPs for <a href="../?r=<?php echo urlencode($_GET['r']);?>">"<?php echo $releasename;?>"</a></p>
 		<p>All WIPs are released under the same license as that of the released song.</p>
 		<table>
 			<thead>
