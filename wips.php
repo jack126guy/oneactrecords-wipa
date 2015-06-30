@@ -7,7 +7,7 @@ if(empty($_GET['r'])) {
 //Identify project name
 require_once('../db.php');
 $releaseid = $sql->real_escape_string($_GET['r']);
-$releasequery = $sql->query('SELECT releasename FROM ' . $sql->get_table_prefix() . 'releases WHERE releaseid = "' . $releaseid . '"');
+$releasequery = $sql->query('SELECT releasename FROM `' . $sql->get_table_prefix() . 'releases` WHERE releaseid = \'' . $releaseid . '\'');
 if($sql->num_rows($releasequery) == 0) {
 	$releasename = 'Nonexistent Release';
 	header('HTTP/1.1 404 Not Found');
@@ -24,14 +24,14 @@ if($sql->num_rows($releasequery) == 0) {
 		<link rel="stylesheet" type="text/css" href="tablestyles.css"/>
 	</head>
 	<body>
-		<p>WIPs for <a href="../?r=<?php echo $_GET['r'];?>">"<?php echo $releasename;?>"</a></p>
+		<p>WIPs for <a href="../?r=<?php echo urlencode($_GET['r']);?>">"<?php echo $releasename;?>"</a></p>
 		<p>All WIPs are released under the same license as that of the released song.</p>
 		<table>
 			<thead>
 				<tr><th>Name (Click to Download)</th><th>Description</th></tr>
 			</thead>
 			<tbody>
-			<?php include('wiplist.php'); generate_list($releaseid); ?>
+			<?php include('wiplist.php'); oar_wipa_generate_list($releaseid); ?>
 			</tbody>
 		</table>
 	</body>
