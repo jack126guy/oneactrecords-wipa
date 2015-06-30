@@ -11,7 +11,8 @@ Versions before 1.0 are not yet ready for general use. Using these versions requ
 ## Roadmap
 
 * v0.0.1 - Content on website
-* v0.0.1.1 - *Current version*: Bug fixes
+* v0.0.1.1 - Bug fixes
+* v0.0.1.2 - *Current version*: Remove some "personal information"
 * v0.1 - *First fully documented version*
 * v1.0 - *First usable version*
 
