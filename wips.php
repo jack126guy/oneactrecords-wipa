@@ -19,7 +19,7 @@ if($sql->num_rows($releasequery) == 0) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Works in Progress for "<?php echo $releasename;?>" by 126mix</title>
+		<title>Works in Progress for "<?php echo $releasename;?>"</title>
 		<link rel="stylesheet" type="text/css" href="../styles.css"/>
 		<link rel="stylesheet" type="text/css" href="tablestyles.css"/>
 	</head>
