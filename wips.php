@@ -7,7 +7,7 @@ if(empty($_GET['r'])) {
 //Identify project name
 require_once('../db.php');
 $releaseid = $sql->real_escape_string($_GET['r']);
-$releasequery = $sql->query('SELECT releasename FROM ' . $sql->get_table_prefix() . 'releases WHERE releaseid = "' . $releaseid . '"');
+$releasequery = $sql->query('SELECT releasename FROM `' . $sql->get_table_prefix() . 'releases` WHERE releaseid = \'' . $releaseid . '\'');
 if($sql->num_rows($releasequery) == 0) {
 	$releasename = 'Nonexistent Release';
 	header('HTTP/1.1 404 Not Found');
