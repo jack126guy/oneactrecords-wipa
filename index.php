@@ -7,6 +7,7 @@ if(!empty($_GET['r'])) {
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
 		<title>Work in Progress Archive</title>
 		<link rel="stylesheet" type="text/css" href="../styles.css"/>
 		<link rel="stylesheet" type="text/css" href="tablestyles.css"/>
