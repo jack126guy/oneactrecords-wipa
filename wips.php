@@ -1,6 +1,7 @@
 <?php
 //Return to homepage if release was not specified
 if(empty($_GET['r'])) {
+	header('HTTP/1.1 301 Moved Permanently');
 	header('Location: http' . (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == 'off' ? '' : 's') . '://' . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']));
 	exit;
 }
