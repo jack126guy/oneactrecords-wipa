@@ -19,7 +19,7 @@ if(!empty($_GET['r'])) {
 				<tr><th>Name (Click to Download)</th><th>For Release</th><th>Description</th></tr>
 			</thead>
 			<tbody>
-			<?php include('wiplist.php'); generate_list(); ?>
+			<?php include('wiplist.php'); oar_wipa_generate_list(); ?>
 			</tbody>
 		</table>
 	</body>
