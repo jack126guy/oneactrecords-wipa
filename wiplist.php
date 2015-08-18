@@ -1,5 +1,5 @@
 <?php
-require_once('../db.php');
+require_once(dirname(__FILE__) . '/../include/db.php');
 function oar_wipa_generate_list($releaseid = '') {
 	global $sql;
 	if(empty($releaseid)) {
