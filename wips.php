@@ -7,8 +7,8 @@ if(empty($_GET['r'])) {
 }
 //Identify project name
 require_once('../db.php');
-$releaseid = $sql->real_escape_string($_GET['r']);
-$releasequery = $sql->query('SELECT releasename FROM `' . $sql->get_table_prefix() . 'releases` WHERE releaseid = \'' . $releaseid . '\'');
+$escapedrelid = $sql->real_escape_string($_GET['r']);
+$releasequery = $sql->query('SELECT releasename FROM `' . $sql->get_table_prefix() . 'releases` WHERE releaseid = \'' . $escapedrelid . '\'');
 if($sql->num_rows($releasequery) == 0) {
 	$releasename = 'Nonexistent Release';
 	header('HTTP/1.1 404 Not Found');
@@ -33,7 +33,7 @@ if($sql->num_rows($releasequery) == 0) {
 				<tr><th>Name (Click to Download)</th><th>Description</th></tr>
 			</thead>
 			<tbody>
-			<?php include('wiplist.php'); oar_wipa_generate_list($releaseid); ?>
+			<?php include('wiplist.php'); oar_wipa_generate_list($escapedrelid); ?>
 			</tbody>
 		</table>
 	</body>
