@@ -1,5 +1,9 @@
 # One Act Records WIP Archive
 
+**Abandoned**: No new work has been done since 2015. The recommended replacement is [Rowboat Music](https://github.com/jack126guy/rowboat-music) which uses a static-site generator (Hugo). The replacement for the WIP Archive addition is the reference system of Rowboat Music. [Compatibility scripts](https://github.com/jack126guy/oar-to-rm-compat) are available to ensure that old URLs still work (including for the WIP Archive). Some (incomplete) documentation is available.
+
+---
+
 The WIP Archive addition to [One Act Records](http://github.com/jack126guy/oneactrecords) provides a simple list of published works in progress (WIPs) along with download links. WIPs can be filtered by release.
 
 [See it in action](http://anon126.tk/cyanomixer/wipa) for my music.
@@ -28,6 +32,6 @@ The versioning of WIPA is (rather poorly) designed to express compatibility with
 
 ## Information Files
 
-* *MANUAL*: The user manual will have instructions for musicians. *Before version 1.0, it will discuss only general concepts. Version 1.0 will discuss how to add music.*
-* *TECHNICAL*: The technical information will have details for developers.
+* *MANUAL*: The user manual will have instructions for musicians. *This is not yet written.*
+* *TECHNICAL*: The technical information will have details for developers. *Currently, it only discusses the database schema.*
 * *LICENSE*: The license for this work is a 3-clause BSD license. (Refer to `LICENSE.txt` for details.)
